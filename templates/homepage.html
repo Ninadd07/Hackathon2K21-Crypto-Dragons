@@ -1,0 +1,128 @@
+<html>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+
+.header h1 {
+  font-size: 40px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+.navbar a.right {
+  float: right;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: #000000;
+}
+
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+.side {
+  -ms-flex: 30%; 
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+</style>
+</head>
+<body bgcolor="WHITE">
+<div class="header">
+    <h1 style="color:#3039bb; font-family:fantasy;">#LOVE LOCKDOWN</h1>
+  </div>
+  <div class="navbar">
+    <a href="#sample1">Movies</a>
+    <a href="#sample2">Online Shopping</a>
+    <a href="#sample3">Health and Fitness</a>
+  </div>
+    <h1>Cure your boredom with tons of entertainment !</h1>
+    <br><br>
+    <center>
+    <form method="post" action="/">
+        <input type="submit" name="movie" value="Movies" style="height:200px; width:200px; background-color: #1abc9c; color:#3039bb ;font-size:20px; border-radius: 12px;"></input>
+        <input type="submit" name="order" value="Online Shopping" style="height:200px; width:200px; background-color: #1abc9c; color:#3039bb;font-size:20px; border-radius: 12px;"></input>
+        <input type="submit" name="fitness" value="Health and Fitness" style="height:200px; width:200px; background-color: #1abc9c; color: #3039bb; font-size:20px; border-radius: 12px;"></input>
+    </center>
+    </form>
+    <br><br><br><BR><BR><BR>
+    <h2>Who are we? <br></H2>
+  <H3>  Crypto Dragons v2.0 is a non-profit organization created to help people survive lockdown and provide tons of entertainment for users sitting at home.</H3>
+</body>
+</html> 

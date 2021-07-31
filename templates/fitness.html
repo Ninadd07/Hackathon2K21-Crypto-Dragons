@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Fitness</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Fitness Factory</h1>
+  <p>Welcomes You!</p>
+</div>
+
+<div class="navbar">
+  <a href="#sample">Planter Fitness</a>
+  <a href="#sample2">Livestrong</a>
+  <a href=“#sample3”>Muscle & Fitness</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>Benefits of Being Fit</h2>
+<ol>
+<li>Reduce your risk of a heart attack</li><BR><BR>
+<li>Have a lower blood cholesterol level.</li><BR><BR>
+<li>Have lower blood pressure.</li><BR><BR>
+<li>Help your body manage blood sugar and insulin levels</li><BR><BR>
+<li>Improve your mental health</li>
+</ol>
+ <br>
+    <h3>Some Famous Quotes to Motivate You</h3>
+<ul>
+    <li>¨Exercise is labor without weariness.¨ – Samuel Johnson</li><BR><BR><BR>
+<li>¨The human body is the best picture of the human soul.¨ – Ludwig Wittgenstein</li><BR><BR><BR>
+<li>¨The pain you feel today will be the strength you feel tomorrow.¨ – Arnold Schwarzenegger</li><BR><BR><BR>
+<li>“You must expect great things of yourself before you can do them.”- Michael Jordan</li>
+</ul>
+<br>
+  </div>
+  <div class="main">
+<h1><center>Popular Websites to Consider</center></h1>
+    <h2><a name="sample">Planet Fitness</a></h2>
+    <a href="https://www.planetfitness.com/"><img src="{{ url_for('static',filename="planet.jpg") }}" style="height:100; width:200;"></a>
+    <p>About</p>
+    <p>This website promotes the gym, but it also contains a wide array of information on how people can stay in shape. For example, in the middle of the coronavirus outbreak, the website shifted to “bring the gym to you.” As is part of the Planet Fitness mantra, it contains information for beginners, including a section on someone’s first workout.</p>
+    <br>
+    <h2><a name="sample2">LiveStrong</a></h2>
+    <a href="https://www.livestrong.com/"><img src="{{ url_for('static',filename="livest.jpg") }}" style="height:100; width:200;"></a>
+    <p>About</p>
+    <p>Livestrong has an incredible wealth of information on exercises, health care, physical health, mental health and more. It is updated multiple times a day and comes complete with great forums and up-to-date information about fitness trends that are relevant in today’s world.</p>
+<br>
+<h2><a name="sample3">Muscle & Fitness</a></h2>
+    <a href="https://www.muscleandfitness.com/"><img src="{{ url_for('static',filename="muscle.jpg") }}" style="height:100; width:200;"></a>
+    <p>About</p>
+    <p> As the name would imply, muscle & fitness is narrowly focused around how to build your muscles and stay in shape. It contains great information on specific ways to build muscle, including the types of workouts that are best for these purposes. </p>
+
+    <div class="footer">
+        <h2><a href="http://127.0.0.1:5000/">Return to Homepage</a></h2>
+      </div>
+</body>
+</html>
